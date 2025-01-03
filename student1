@@ -1,1 +1,151 @@
+1. len()
+Description: Returns the length of the string (the number of characters). Example:
 
+
+text = "Hello, World!"
+print(len(text))  # Output: 13
+
+2. lower()
+Description: Converts all characters in the string to lowercase. Example:
+text = "Hello, World!"
+print(text.lower())  # Output: "hello, world!"
+
+3. upper()
+Description: Converts all characters in the string to uppercase. Example:
+text = "Hello, World!"
+print(text.upper())  # Output: "HELLO, WORLD!"
+
+4. capitalize()
+Description: Capitalizes the first letter of the string and converts the rest to lowercase. Example:
+text = "hello, world!"
+print(text.capitalize())  # Output: "Hello, world!"
+
+5. strip()
+Description: Removes leading and trailing whitespace (spaces, tabs, etc.). Example:
+text = "   Hello, World!   "
+print(text.strip())  # Output: "Hello, World!"
+
+6. replace(old, new)
+Description: Replaces all occurrences of a substring (old) with a new substring (new). Example:
+text = "Hello, World!"
+print(text.replace("World", "Python"))  # Output: "Hello, Python!"
+
+7. split(separator)
+Description: Splits the string into a list of substrings based on the specified separator. Example:
+text = "apple,orange,banana"
+print(text.split(","))  # Output: ['apple', 'orange', 'banana']
+
+8. find(substring)
+Description: Returns the index of the first occurrence of the substring. If not found, returns -1. Example:
+text = "Hello, World!"
+print(text.find("World"))  # Output: 7
+print(text.find("Python"))  # Output: -1
+
+9. join(iterable)
+
+Description: Joins all the elements in the iterable (like a list or tuple) into a string, using the string as a separator. Example:
+words = ['Hello', 'World']
+print(" ".join(words))  # Output: "Hello World"
+
+10. startswith(prefix)
+Description: Checks if the string starts with the specified prefix. Returns True or False. Example:
+text = "Hello, World!"
+print(text.startswith("Hello"))  # Output: True
+print(text.startswith("World"))  # Output: False
+
+11. endswith(suffix)
+
+Description: Checks if the string ends with the specified suffix. Returns True or False. Example:
+text = "Hello, World!"
+print(text.endswith("World!"))  # Output: True
+print(text.endswith("hello"))   # Output: False
+
+12. isalpha()
+
+Description: Checks if all characters in the string are alphabetic. Returns True if all characters are letters and False otherwise. Example:
+text = "Hello"
+print(text.isalpha())  # Output: True
+
+text = "Hello123"
+print(text.isalpha())  # Output: False
+
+13. isdigit()
+
+Description: Checks if all characters in the string are digits. Returns True if all characters are numeric and False otherwise. Example:
+text = "12345"
+print(text.isdigit())  # Output: True
+
+text = "123a45"
+print(text.isdigit())  # Output: False
+
+14. isalnum()
+
+Description: Checks if all characters in the string are alphanumeric (letters or digits). Returns True if all characters are alphanumeric and False otherwise. Example:
+text = "Hello123"
+print(text.isalnum())  # Output: True
+text = "Hello 123"
+print(text.isalnum())  # Output: False
+
+15. title()
+
+Description: Converts the first character of each word to uppercase and the remaining characters to lowercase. Example:
+text = "hello world"
+print(text.title())  # Output: "Hello World"
+These methods are essential tools when manipulating strings in Python. Each method provides a specific operation to change, analyze, or format strings in a particular way.
+
+16. isspace()
+
+Description: Checks if all characters in the string are whitespace (spaces, tabs, newlines). Returns True or False.
+
+text = "   "
+print(text.isspace())  # Output: True
+
+text = "Hello"
+print(text.isspace())  # Output: False
+17. count(substring)
+Description: Returns the number of occurrences of the substring in the string.
+Example:
+python
+Copy code
+text = "Hello, Hello!"
+print(text.count("Hello"))  # Output: 2
+
+18. swapcase()
+
+Description: Swaps the case of all characters in the string (upper to lower and vice versa).
+Example:
+text = "Hello World"
+print(text.swapcase())  # Output: "hELLO wORLD"
+
+19. zfill(width)
+
+Description: Pads the string on the left with zeros to make it the specified width.
+Example:
+text = "42"
+print(text.zfill(5))  # Output: "00042"
+
+20. encode(encoding)
+
+Description: Encodes the string into bytes using the specified encoding (e.g., UTF-8).
+Example:
+python
+Copy code
+text = "Hello"
+encoded = text.encode('utf-8')
+print(encoded)  # Output: b'Hello'
+
+21. partition(separator)
+
+Description: Splits the string at the first occurrence of the separator and returns a tuple containing the part before the separator, the separator itself, and the part after.
+Example:
+python
+Copy code
+text = "Hello, World!"
+print(text.partition(","))  # Output: ('Hello', ',', ' World!')
+22. format(*args, **kwargs)
+Description: Formats the string by replacing curly braces {} with values provided as arguments.
+Example:
+python
+Copy code
+text = "Hello, {}!"
+print(text.format("Alice"))  # Output: "Hello, Alice!"
