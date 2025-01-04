@@ -167,3 +167,95 @@ print(s.zfill(5))  # Output: "00042"
 # 42. removeprefix() - Removes the specified prefix from the string (Python 3.9+)
 s = "TestHook"
 print(s.removeprefix('Test'))  # Output: "Hook"
+
+
+
+In Python, variable names must follow certain rules to ensure that the code is valid and works properly. Here's a breakdown of the key rules for naming variables in Python:
+
+1. Valid Characters
+  
+Variable names can contain:
+Letters (a-z, A-Z)
+Digits (0-9), but not as the first character.
+Underscores (_)
+  
+2. First Character
+  
+The first character of a variable name must be a letter or an underscore (_).
+Cannot start with a number.
+Examples of valid first characters:
+
+x
+_variable
+var1
+Examples of invalid first characters:
+
+1variable (starts with a number)
+  
+3. Case Sensitivity
+  
+Python is case-sensitive, meaning that uppercase and lowercase letters are treated as different characters.
+Examples:
+
+myVariable and myvariable are two different variables.
+  
+4. Keywords (Reserved Words)
+  
+Python has a set of reserved words (also known as keywords), which are part of the language syntax. These cannot be used as variable names.
+Some examples of Python keywords:
+
+if, else, while, for, def, class, True, False, import, None, etc.
+You can check the list of reserved keywords in Python using the keyword module:
+
+import keyword
+print(keyword.kwlist)
+  
+5. Length of the Name
+  
+Python does not impose any strict limit on the length of variable names, but it is recommended to keep them meaningful and not too long.
+  
+6. Use of Underscores in Python Naming:
+  
+Single Leading Underscore (_variable): Indicates internal use, suggesting "private" (not strictly enforced).
+Double Leading Underscore (__variable): Triggers name mangling to avoid subclass conflicts.
+Single Trailing Underscore (variable_): Used to avoid conflicts with Python keywords (e.g., class_).
+Double Leading and Trailing Underscore (__variable__): Reserved for special methods (e.g., __init__, __str__).
+  
+7. No Spaces
+  
+Variable names cannot contain spaces. Use underscores instead if needed.
+Valid: my_variable Invalid: my variable
+
+8. No Special Characters
+  
+You cannot use special characters such as @, #, $, %, etc., in variable names.
+  
+9. Global vs Local Variables
+  
+If you want to use a variable globally across multiple functions, make sure you declare it at the top of the script. If a variable is only meant for a specific function, it should be declared within that function scope.
+Examples of Valid Variable Names:
+
+x = 10
+total_amount = 100.5
+user_name = "Alice"
+myVariable = 45
+_class = "Test"
+totalAmount1 = 25
+Examples of Invalid Variable Names:
+  
+1variable = 10  # Starts with a number
+class = "example"  # Reserved keyword
+user-name = "Bob"  # Contains a hyphen
+total@amount = 30  # Contains a special character
+
+  VALID NAMES:
+  
+  my_variable = 10
+totalAmount = 25
+_class = "test"
+  
+  INVALID NAMES:
+  
+  1variable = 10  # Starts with a number
+class = "test"  # Reserved keyword
+my variable = 5  # Contains space
